@@ -16,9 +16,10 @@ List<BottomNavigationBarItem> bottomNavItems = [
       icon: SvgPicture.asset("assets/navigation/home.svg"), label: 'Home'),
   BottomNavigationBarItem(
       icon: SvgPicture.asset("assets/navigation/activity.svg"),
-      label: 'Explore'),
+      label: 'Activity'),
   BottomNavigationBarItem(
-      icon: SvgPicture.asset("assets/navigation/community.svg"), label: 'Post'),
+      icon: SvgPicture.asset("assets/navigation/community.svg"),
+      label: 'Community'),
   BottomNavigationBarItem(
       icon: SvgPicture.asset("assets/navigation/profile.svg"),
       label: 'Profile'),

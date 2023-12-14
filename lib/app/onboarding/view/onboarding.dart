@@ -1,4 +1,5 @@
 import 'package:chargemod_assign/app/auth/view/screen/login.view.dart';
+import 'package:chargemod_assign/app/onboarding/view/widget/onboarding_heading.dart';
 import 'package:chargemod_assign/routes/page_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,12 +36,15 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         subtitle: 'RealTime',
         lowerTitle: 'Monitoring'),
   ];
+
   List<String> pageSummary = [
     "Scan Charge and Go Effortless Charging schemas",
     "Grab The Best In Class Digital Experience Crafted For EV Drivers",
     "Intelligent Sensible Devices Ambicharge Series"
   ];
+
   bool first = true;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -200,50 +204,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           ],
         ),
       ),
-    );
-  }
-}
-
-class OnBoardingHeading extends StatelessWidget {
-  const OnBoardingHeading({
-    super.key,
-    required this.title,
-    required this.subtitle,
-    required this.lowerTitle,
-  });
-
-  final String title;
-  final String subtitle;
-  final String lowerTitle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          title,
-          style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 16.sp,
-              color: const Color(0xff2E2E2D)),
-        ),
-        Text(
-          subtitle,
-          style: TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 40.sp,
-              height: 1.2,
-              color: const Color(0xff2E2E2D)),
-        ),
-        Text(
-          lowerTitle,
-          style: TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 40.sp,
-              height: 1,
-              color: const Color(0xffE6740C)),
-        ),
-      ],
     );
   }
 }

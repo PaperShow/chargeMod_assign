@@ -5,6 +5,12 @@ class CommunityView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Text("Community Section"),
+        ),
+      ),
+    );
   }
 }
